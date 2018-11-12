@@ -13,18 +13,31 @@ class HomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        // 设置UI
+        setupUI()
+        
+    }
+ 
+}
+
+// MARK : - 设置UI界面
+extension HomeViewController{
+    private func setupUI(){
+        
+        // 1.设置导航栏
+        setupNavigationBar()
+        
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    //导航栏
+    private func setupNavigationBar(){
+        
+        let logoBtn = UIButton()
+        
+        logoBtn.setImage(UIImage(named: "logo"), for: .normal)
+        
+        logoBtn.sizeToFit()
+        
+        navigationItem.leftBarButtonItem = UIBarButtonItem(customView: logoBtn)
     }
-    */
-
 }
