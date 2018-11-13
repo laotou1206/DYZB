@@ -32,12 +32,27 @@ extension HomeViewController{
     //导航栏
     private func setupNavigationBar(){
         
-        let logoBtn = UIButton()
+        // 设置标题栏左边的图标
+//        let logoBtn = UIBarButtonItem(imageName: "logo", highImageName: "", size: CGSize.zero)
         
-        logoBtn.setImage(UIImage(named: "logo"), for: .normal)
+//        logoBtn.setImage(UIImage(named: "logo"), for: .normal)
+//        logoBtn.sizeToFit()
+        navigationItem.leftBarButtonItem = UIBarButtonItem(imageName: "logo")
         
-        logoBtn.sizeToFit()
         
-        navigationItem.leftBarButtonItem = UIBarButtonItem(customView: logoBtn)
+        //设置标题栏右边的 item
+        let size = CGSize(width: 40, height: 40)
+        
+        let historyBtn = UIBarButtonItem(imageName: "image_my_history", highImageName: "Image_my_history_click", size: size)
+        
+        
+        let searchBtn = UIBarButtonItem(imageName: "btn_search", highImageName: "btn_search_clicked", size: size)
+        
+        let qrcodeBtn = UIBarButtonItem(imageName: "Image_scan", highImageName: "Image_scan_click", size: size)
+        
+        navigationItem.rightBarButtonItems = [historyBtn,searchBtn,qrcodeBtn]
+        
+        
+        
     }
 }
