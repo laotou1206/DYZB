@@ -10,11 +10,17 @@
 		94104FB221993D93006CDF8E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94104FB121993D93006CDF8E /* AppDelegate.swift */; };
 		94104FB921993D95006CDF8E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 94104FB821993D95006CDF8E /* Assets.xcassets */; };
 		94104FBC21993D95006CDF8E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94104FBA21993D95006CDF8E /* LaunchScreen.storyboard */; };
+		945A9C2C219BBE8000A34026 /* CollectionNormalCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 945A9C2A219BBE8000A34026 /* CollectionNormalCell.swift */; };
+		945A9C2D219BBE8000A34026 /* CollectionNormalCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 945A9C2B219BBE8000A34026 /* CollectionNormalCell.xib */; };
+		945A9C30219BCF4D00A34026 /* CollectionPrettyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 945A9C2E219BCF4D00A34026 /* CollectionPrettyCell.swift */; };
+		945A9C31219BCF4D00A34026 /* CollectionPrettyCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 945A9C2F219BCF4D00A34026 /* CollectionPrettyCell.xib */; };
 		945C8F13219A6C0F001A12E7 /* PageTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 945C8F12219A6C0F001A12E7 /* PageTitleView.swift */; };
 		945C8F15219A6F3A001A12E7 /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 945C8F14219A6F3A001A12E7 /* Common.swift */; };
 		945C8F17219A8F69001A12E7 /* PageContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 945C8F16219A8F69001A12E7 /* PageContentView.swift */; };
 		945C8F19219A9387001A12E7 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 945C8F18219A9387001A12E7 /* UIColorExtension.swift */; };
 		945C8F1B219ACB41001A12E7 /* RecommendViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 945C8F1A219ACB41001A12E7 /* RecommendViewController.swift */; };
+		945C8F22219AE076001A12E7 /* CollectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 945C8F20219AE076001A12E7 /* CollectionHeaderView.swift */; };
+		945C8F23219AE076001A12E7 /* CollectionHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 945C8F21219AE076001A12E7 /* CollectionHeaderView.xib */; };
 		94DAF7E521996D5500863359 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94DAF7E421996D5500863359 /* MainViewController.swift */; };
 		94DAF7F8219978B500863359 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94DAF7F7219978B500863359 /* HomeViewController.swift */; };
 		94DAF7FA21997EFF00863359 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94DAF7F921997EFF00863359 /* Main.storyboard */; };
@@ -31,11 +37,17 @@
 		94104FB821993D95006CDF8E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		94104FBB21993D95006CDF8E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		94104FBD21993D95006CDF8E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		945A9C2A219BBE8000A34026 /* CollectionNormalCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionNormalCell.swift; sourceTree = "<group>"; };
+		945A9C2B219BBE8000A34026 /* CollectionNormalCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionNormalCell.xib; sourceTree = "<group>"; };
+		945A9C2E219BCF4D00A34026 /* CollectionPrettyCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionPrettyCell.swift; sourceTree = "<group>"; };
+		945A9C2F219BCF4D00A34026 /* CollectionPrettyCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionPrettyCell.xib; sourceTree = "<group>"; };
 		945C8F12219A6C0F001A12E7 /* PageTitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageTitleView.swift; sourceTree = "<group>"; };
 		945C8F14219A6F3A001A12E7 /* Common.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
 		945C8F16219A8F69001A12E7 /* PageContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageContentView.swift; sourceTree = "<group>"; };
 		945C8F18219A9387001A12E7 /* UIColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
 		945C8F1A219ACB41001A12E7 /* RecommendViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendViewController.swift; sourceTree = "<group>"; };
+		945C8F20219AE076001A12E7 /* CollectionHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionHeaderView.swift; sourceTree = "<group>"; };
+		945C8F21219AE076001A12E7 /* CollectionHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionHeaderView.xib; sourceTree = "<group>"; };
 		94DAF7E421996D5500863359 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		94DAF7F7219978B500863359 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		94DAF7F921997EFF00863359 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
@@ -170,6 +182,8 @@
 		94DAF7E72199755700863359 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				945C8F20219AE076001A12E7 /* CollectionHeaderView.swift */,
+				945C8F21219AE076001A12E7 /* CollectionHeaderView.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -261,6 +275,10 @@
 			children = (
 				945C8F12219A6C0F001A12E7 /* PageTitleView.swift */,
 				945C8F16219A8F69001A12E7 /* PageContentView.swift */,
+				945A9C2A219BBE8000A34026 /* CollectionNormalCell.swift */,
+				945A9C2B219BBE8000A34026 /* CollectionNormalCell.xib */,
+				945A9C2E219BCF4D00A34026 /* CollectionPrettyCell.swift */,
+				945A9C2F219BCF4D00A34026 /* CollectionPrettyCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -340,10 +358,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				94DAF7FE2199814600863359 /* Follow.storyboard in Resources */,
+				945C8F23219AE076001A12E7 /* CollectionHeaderView.xib in Resources */,
+				945A9C2D219BBE8000A34026 /* CollectionNormalCell.xib in Resources */,
 				94DAF7FA21997EFF00863359 /* Main.storyboard in Resources */,
 				94DAF8002199816E00863359 /* Live.storyboard in Resources */,
 				94104FBC21993D95006CDF8E /* LaunchScreen.storyboard in Resources */,
 				94104FB921993D95006CDF8E /* Assets.xcassets in Resources */,
+				945A9C31219BCF4D00A34026 /* CollectionPrettyCell.xib in Resources */,
 				94DAF8022199819200863359 /* Profile.storyboard in Resources */,
 				94DAF7FC2199811200863359 /* Home.storyboard in Resources */,
 			);
@@ -357,6 +378,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				94104FB221993D93006CDF8E /* AppDelegate.swift in Sources */,
+				945C8F22219AE076001A12E7 /* CollectionHeaderView.swift in Sources */,
 				94DAF8052199870B00863359 /* UIBarButtonExtension.swift in Sources */,
 				945C8F1B219ACB41001A12E7 /* RecommendViewController.swift in Sources */,
 				945C8F13219A6C0F001A12E7 /* PageTitleView.swift in Sources */,
@@ -364,6 +386,8 @@
 				945C8F17219A8F69001A12E7 /* PageContentView.swift in Sources */,
 				94DAF7E521996D5500863359 /* MainViewController.swift in Sources */,
 				945C8F15219A6F3A001A12E7 /* Common.swift in Sources */,
+				945A9C30219BCF4D00A34026 /* CollectionPrettyCell.swift in Sources */,
+				945A9C2C219BBE8000A34026 /* CollectionNormalCell.swift in Sources */,
 				94DAF7F8219978B500863359 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

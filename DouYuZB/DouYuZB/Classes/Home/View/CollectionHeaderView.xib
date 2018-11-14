@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionReusableView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="U6b-Vx-4bR" customClass="CollectionHeaderView" customModule="DouYuZB" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="59"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SmW-4S-V9M">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="10"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="home_header_phone" translatesAutoresizingMaskIntoConstraints="NO" id="ezZ-11-Awe">
+                            <rect key="frame" x="-69" y="-47" width="240" height="128"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" red="0.91764705882352937" green="0.91764705882352937" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="10" id="vEK-Ki-1gs"/>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="subviews">
+                            <exclude reference="ezZ-11-Awe"/>
+                        </mask>
+                    </variation>
+                </view>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="home_header_phone" translatesAutoresizingMaskIntoConstraints="NO" id="Gxa-28-mHa">
+                    <rect key="frame" x="-73" y="59" width="18" height="18"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="home_header_phone" translatesAutoresizingMaskIntoConstraints="NO" id="Upl-Ns-jDF">
+                    <rect key="frame" x="10" y="21" width="18" height="18"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="颜值" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WlI-Kj-OEY">
+                    <rect key="frame" x="36" y="20.5" width="33" height="19.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="46A-wV-2a9">
+                    <rect key="frame" x="305" y="15" width="60" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="60" id="vVp-1d-3FZ"/>
+                    </constraints>
+                    <state key="normal" title="更多&gt;">
+                        <color key="titleColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                    </state>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="SmW-4S-V9M" firstAttribute="top" secondItem="U6b-Vx-4bR" secondAttribute="top" id="0og-dM-MFp"/>
+                <constraint firstItem="WlI-Kj-OEY" firstAttribute="centerY" secondItem="Upl-Ns-jDF" secondAttribute="centerY" id="9Vn-Bv-iBA"/>
+                <constraint firstItem="Upl-Ns-jDF" firstAttribute="leading" secondItem="VXr-Tz-HHm" secondAttribute="leading" constant="10" id="Dt5-h7-aJm"/>
+                <constraint firstItem="WlI-Kj-OEY" firstAttribute="leading" secondItem="Upl-Ns-jDF" secondAttribute="trailing" constant="8" id="H54-Zw-NWd"/>
+                <constraint firstItem="Upl-Ns-jDF" firstAttribute="top" secondItem="SmW-4S-V9M" secondAttribute="bottom" constant="11" id="Myu-nH-VrK"/>
+                <constraint firstItem="SmW-4S-V9M" firstAttribute="leading" secondItem="VXr-Tz-HHm" secondAttribute="leading" id="OJx-vH-dGm"/>
+                <constraint firstItem="VXr-Tz-HHm" firstAttribute="trailing" secondItem="46A-wV-2a9" secondAttribute="trailing" constant="10" id="Qm5-t5-qy7"/>
+                <constraint firstItem="46A-wV-2a9" firstAttribute="centerY" secondItem="Upl-Ns-jDF" secondAttribute="centerY" id="R85-Ge-H0j"/>
+                <constraint firstItem="VXr-Tz-HHm" firstAttribute="trailing" secondItem="SmW-4S-V9M" secondAttribute="trailing" id="e33-lr-Vug"/>
+                <constraint firstItem="WlI-Kj-OEY" firstAttribute="centerY" secondItem="Upl-Ns-jDF" secondAttribute="centerY" id="l3Z-Zd-IeD"/>
+                <constraint firstItem="WlI-Kj-OEY" firstAttribute="centerY" secondItem="Upl-Ns-jDF" secondAttribute="centerY" id="zF2-Bz-YdJ"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="VXr-Tz-HHm"/>
+            <point key="canvasLocation" x="124" y="94.902548725637189"/>
+        </collectionReusableView>
+    </objects>
+    <resources>
+        <image name="home_header_phone" width="18" height="18"/>
+    </resources>
+</document>
