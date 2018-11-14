@@ -57,6 +57,11 @@ class HomeViewController: UIViewController {
         // 设置UI
         setupUI()
         
+        //测试网络请求
+        NetWorkTools.requestData(type: .get, urlString: "https://httpbin.org/get") { (response) in
+            print("Json : \(response)")
+        }
+        
     }
  
 }
