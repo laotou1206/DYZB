@@ -19,7 +19,7 @@
                 <rect key="frame" x="0.0" y="0.0" width="236" height="297"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
-                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CEH-vb-5uu">
+                    <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CEH-vb-5uu">
                         <rect key="frame" x="0.0" y="273" width="46" height="14"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="14" id="KN5-KM-b0e"/>
@@ -47,39 +47,46 @@
                             <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
                         </userDefinedRuntimeAttributes>
                     </imageView>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="666在线" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M9i-mR-Ctb">
-                        <rect key="frame" x="171" y="5" width="60" height="20"/>
-                        <color key="backgroundColor" white="0.0" alpha="0.5" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1rJ-Ml-t7I">
+                        <rect key="frame" x="168" y="8" width="60" height="20"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstAttribute="width" constant="60" id="VGB-cZ-fzH"/>
-                            <constraint firstAttribute="height" constant="20" id="dD3-5g-y5X"/>
+                            <constraint firstAttribute="height" constant="20" id="0TK-f5-OSx"/>
+                            <constraint firstAttribute="width" constant="60" id="Nm6-Uk-NPP"/>
                         </constraints>
-                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <nil key="highlightedColor"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                        <state key="normal" title="666在线">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </state>
                         <userDefinedRuntimeAttributes>
                             <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
                                 <integer key="value" value="3"/>
                             </userDefinedRuntimeAttribute>
                             <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
                         </userDefinedRuntimeAttributes>
-                    </label>
+                    </button>
                 </subviews>
             </view>
             <constraints>
                 <constraint firstItem="Wtf-G4-OSN" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="AjF-J2-HYC"/>
                 <constraint firstItem="Wtf-G4-OSN" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="E5q-xm-Da3"/>
-                <constraint firstAttribute="trailing" secondItem="M9i-mR-Ctb" secondAttribute="trailing" constant="5" id="IcZ-QX-HfR"/>
                 <constraint firstItem="CEH-vb-5uu" firstAttribute="top" secondItem="myV-E5-jWg" secondAttribute="bottom" constant="5" id="Tdx-YI-jHB"/>
+                <constraint firstItem="1rJ-Ml-t7I" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="8" id="WnK-fJ-eNq"/>
                 <constraint firstAttribute="trailing" secondItem="Wtf-G4-OSN" secondAttribute="trailing" id="bPn-DF-MKj"/>
                 <constraint firstItem="myV-E5-jWg" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="dDk-7C-SfE"/>
+                <constraint firstAttribute="trailing" secondItem="1rJ-Ml-t7I" secondAttribute="trailing" constant="8" id="eMU-wI-h27"/>
                 <constraint firstItem="myV-E5-jWg" firstAttribute="top" secondItem="Wtf-G4-OSN" secondAttribute="bottom" constant="5" id="fIT-rU-Pm0"/>
-                <constraint firstItem="M9i-mR-Ctb" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="5" id="jF7-GZ-36b"/>
                 <constraint firstItem="CEH-vb-5uu" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="sh1-ot-12O"/>
                 <constraint firstAttribute="bottom" secondItem="CEH-vb-5uu" secondAttribute="bottom" constant="10" id="uQI-fg-Als"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
             <size key="customSize" width="236" height="297"/>
+            <connections>
+                <outlet property="cityBtn" destination="CEH-vb-5uu" id="a2s-ZE-B0F"/>
+                <outlet property="contentImage" destination="Wtf-G4-OSN" id="5uk-cg-ugC"/>
+                <outlet property="nickNameLabel" destination="myV-E5-jWg" id="ijv-kC-uqf"/>
+                <outlet property="onlineBtn" destination="1rJ-Ml-t7I" id="fHF-Je-dBI"/>
+            </connections>
             <point key="canvasLocation" x="201.59999999999999" y="192.05397301349328"/>
         </collectionViewCell>
     </objects>

@@ -16,38 +16,39 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="150"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="6" translatesAutoresizingMaskIntoConstraints="NO" id="6C8-BQ-ab6">
-                    <rect key="frame" x="278" y="113" width="87" height="37"/>
-                    <color key="pageIndicatorTintColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
-                    <color key="currentPageIndicatorTintColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
-                </pageControl>
-                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="7Si-rR-gkb">
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="NHk-TQ-GL0">
                     <rect key="frame" x="0.0" y="0.0" width="375" height="150"/>
-                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="gej-2e-3DL">
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="DQc-EB-GKn">
                         <size key="itemSize" width="50" height="50"/>
                         <size key="headerReferenceSize" width="0.0" height="0.0"/>
                         <size key="footerReferenceSize" width="0.0" height="0.0"/>
                         <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                     </collectionViewFlowLayout>
                     <connections>
-                        <outlet property="dataSource" destination="iN0-l3-epB" id="rRW-xL-zEv"/>
+                        <outlet property="dataSource" destination="iN0-l3-epB" id="4fT-n0-4J7"/>
+                        <outlet property="delegate" destination="iN0-l3-epB" id="7T1-ep-aeu"/>
                     </connections>
                 </collectionView>
+                <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="iNv-sB-mG0">
+                    <rect key="frame" x="326" y="118" width="39" height="37"/>
+                    <color key="pageIndicatorTintColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <color key="currentPageIndicatorTintColor" red="1" green="0.63611755560000005" blue="0.23198296760000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </pageControl>
             </subviews>
             <constraints>
-                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="6C8-BQ-ab6" secondAttribute="trailing" constant="10" id="Q58-3u-cSM"/>
-                <constraint firstItem="7Si-rR-gkb" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="fTo-w4-YdF"/>
-                <constraint firstItem="7Si-rR-gkb" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="lDu-7y-IRo"/>
-                <constraint firstItem="7Si-rR-gkb" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="t9V-gs-U9I"/>
-                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="6C8-BQ-ab6" secondAttribute="bottom" id="trv-Th-ecB"/>
-                <constraint firstItem="7Si-rR-gkb" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="u3B-M4-xYF"/>
+                <constraint firstItem="NHk-TQ-GL0" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="4KE-rI-Y91"/>
+                <constraint firstItem="NHk-TQ-GL0" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="97L-rh-xFP"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="iNv-sB-mG0" secondAttribute="bottom" constant="-5" id="HPh-BH-xQP"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="NHk-TQ-GL0" secondAttribute="bottom" id="HSx-fo-IPw"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="iNv-sB-mG0" secondAttribute="trailing" constant="10" id="TPK-hb-HzD"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="NHk-TQ-GL0" secondAttribute="trailing" id="lLS-rE-hLo"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <connections>
-                <outlet property="collectionView" destination="7Si-rR-gkb" id="77s-Zl-uMx"/>
-                <outlet property="pageControl" destination="6C8-BQ-ab6" id="3gE-Ts-WbT"/>
+                <outlet property="collectionView" destination="NHk-TQ-GL0" id="3nU-Ev-ExA"/>
+                <outlet property="pageControl" destination="iNv-sB-mG0" id="3ea-nO-I66"/>
             </connections>
         </view>
     </objects>

@@ -73,6 +73,10 @@
                 <constraint firstItem="WlI-Kj-OEY" firstAttribute="centerY" secondItem="Upl-Ns-jDF" secondAttribute="centerY" id="zF2-Bz-YdJ"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="VXr-Tz-HHm"/>
+            <connections>
+                <outlet property="iconImageView" destination="Upl-Ns-jDF" id="Lc3-RJ-OB5"/>
+                <outlet property="titleLabel" destination="WlI-Kj-OEY" id="QPl-dM-c15"/>
+            </connections>
             <point key="canvasLocation" x="124" y="94.902548725637189"/>
         </collectionReusableView>
     </objects>

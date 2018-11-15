@@ -41,8 +41,9 @@
                             <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
                         </userDefinedRuntimeAttributes>
                     </imageView>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="老头学iOS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Exd-rh-NZH">
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="老头学iOS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Exd-rh-NZH">
                         <rect key="frame" x="5" y="118" width="53" height="14"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <fontDescription key="fontDescription" type="system" pointSize="11"/>
                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <nil key="highlightedColor"/>
@@ -63,21 +64,23 @@
                 <constraint firstItem="s1t-4t-W9N" firstAttribute="centerY" secondItem="2Q1-6b-W5a" secondAttribute="centerY" id="259-Q8-8j9"/>
                 <constraint firstItem="gya-g5-2Ju" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="57L-Ly-jRe"/>
                 <constraint firstAttribute="bottom" secondItem="s1t-4t-W9N" secondAttribute="bottom" constant="10" id="7GH-qT-JXq"/>
-                <constraint firstItem="Exd-rh-NZH" firstAttribute="leading" secondItem="gya-g5-2Ju" secondAttribute="leading" id="9xi-Uw-CZy"/>
                 <constraint firstItem="s1t-4t-W9N" firstAttribute="top" secondItem="gya-g5-2Ju" secondAttribute="bottom" constant="5" id="GUT-H0-97i"/>
                 <constraint firstItem="hTF-d8-mdm" firstAttribute="trailing" secondItem="gya-g5-2Ju" secondAttribute="trailing" constant="-5" id="Htu-ar-vWA"/>
-                <constraint firstItem="Exd-rh-NZH" firstAttribute="bottom" secondItem="gya-g5-2Ju" secondAttribute="bottom" constant="5" id="IfY-7Z-eQm"/>
-                <constraint firstItem="Exd-rh-NZH" firstAttribute="leading" secondItem="gya-g5-2Ju" secondAttribute="leading" constant="5" id="Iya-OJ-yAM"/>
                 <constraint firstItem="2Q1-6b-W5a" firstAttribute="leading" secondItem="s1t-4t-W9N" secondAttribute="trailing" constant="5" id="RKs-Mn-Pq0"/>
                 <constraint firstItem="2Q1-6b-W5a" firstAttribute="leading" secondItem="s1t-4t-W9N" secondAttribute="trailing" constant="5" id="YE6-Bn-v0A"/>
                 <constraint firstItem="2Q1-6b-W5a" firstAttribute="top" secondItem="gya-g5-2Ju" secondAttribute="bottom" constant="5" id="fJM-RE-zVE"/>
                 <constraint firstAttribute="trailing" secondItem="gya-g5-2Ju" secondAttribute="trailing" id="fK7-Q1-BLZ"/>
                 <constraint firstItem="hTF-d8-mdm" firstAttribute="bottom" secondItem="gya-g5-2Ju" secondAttribute="bottom" constant="-5" id="hap-HT-K9S"/>
                 <constraint firstItem="gya-g5-2Ju" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="oBI-hd-bM2"/>
-                <constraint firstItem="Exd-rh-NZH" firstAttribute="bottom" secondItem="gya-g5-2Ju" secondAttribute="bottom" constant="-5" id="uyb-7h-Oau"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
             <size key="customSize" width="260" height="166"/>
+            <connections>
+                <outlet property="contentImage" destination="gya-g5-2Ju" id="Pbf-yn-5hy"/>
+                <outlet property="nickNameLabel" destination="2Q1-6b-W5a" id="qLC-3C-EYb"/>
+                <outlet property="onlineBtn" destination="hTF-d8-mdm" id="L9k-3A-i38"/>
+                <outlet property="roomNameLabel" destination="Exd-rh-NZH" id="c67-9y-tob"/>
+            </connections>
             <point key="canvasLocation" x="300.80000000000001" y="206.89655172413794"/>
         </collectionViewCell>
     </objects>
