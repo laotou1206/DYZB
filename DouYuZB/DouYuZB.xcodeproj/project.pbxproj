@@ -31,6 +31,10 @@
 		945C8F1B219ACB41001A12E7 /* RecommendViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 945C8F1A219ACB41001A12E7 /* RecommendViewController.swift */; };
 		945C8F22219AE076001A12E7 /* CollectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 945C8F20219AE076001A12E7 /* CollectionHeaderView.swift */; };
 		945C8F23219AE076001A12E7 /* CollectionHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 945C8F21219AE076001A12E7 /* CollectionHeaderView.xib */; };
+		9488A799219E63F4006EC650 /* RecommendGameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9488A798219E63F4006EC650 /* RecommendGameView.swift */; };
+		9488A79B219E643A006EC650 /* RecommendGameView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9488A79A219E643A006EC650 /* RecommendGameView.xib */; };
+		9488A79E219E6E7E006EC650 /* CollectionGameCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9488A79C219E6E7E006EC650 /* CollectionGameCell.swift */; };
+		9488A79F219E6E7E006EC650 /* CollectionGameCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9488A79D219E6E7E006EC650 /* CollectionGameCell.xib */; };
 		94D64EEE219C28D4009E960C /* NetWorkToos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D64EED219C28D4009E960C /* NetWorkToos.swift */; };
 		94DAF7E521996D5500863359 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94DAF7E421996D5500863359 /* MainViewController.swift */; };
 		94DAF7F8219978B500863359 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94DAF7F7219978B500863359 /* HomeViewController.swift */; };
@@ -72,6 +76,10 @@
 		945C8F1A219ACB41001A12E7 /* RecommendViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendViewController.swift; sourceTree = "<group>"; };
 		945C8F20219AE076001A12E7 /* CollectionHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionHeaderView.swift; sourceTree = "<group>"; };
 		945C8F21219AE076001A12E7 /* CollectionHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionHeaderView.xib; sourceTree = "<group>"; };
+		9488A798219E63F4006EC650 /* RecommendGameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendGameView.swift; sourceTree = "<group>"; };
+		9488A79A219E643A006EC650 /* RecommendGameView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RecommendGameView.xib; sourceTree = "<group>"; };
+		9488A79C219E6E7E006EC650 /* CollectionGameCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionGameCell.swift; sourceTree = "<group>"; };
+		9488A79D219E6E7E006EC650 /* CollectionGameCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionGameCell.xib; sourceTree = "<group>"; };
 		94D64EED219C28D4009E960C /* NetWorkToos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetWorkToos.swift; sourceTree = "<group>"; };
 		94DAF7E421996D5500863359 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		94DAF7F7219978B500863359 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -244,6 +252,10 @@
 				945A9C52219C0BC000A34026 /* RecommendCycleView.xib */,
 				9459A4A7219D7E5D00E32FF4 /* CollectionCycleCell.swift */,
 				9459A4A8219D7E5D00E32FF4 /* CollectionCycleCell.xib */,
+				9488A798219E63F4006EC650 /* RecommendGameView.swift */,
+				9488A79A219E643A006EC650 /* RecommendGameView.xib */,
+				9488A79C219E6E7E006EC650 /* CollectionGameCell.swift */,
+				9488A79D219E6E7E006EC650 /* CollectionGameCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -431,10 +443,12 @@
 				94DAF8002199816E00863359 /* Live.storyboard in Resources */,
 				94104FBC21993D95006CDF8E /* LaunchScreen.storyboard in Resources */,
 				94104FB921993D95006CDF8E /* Assets.xcassets in Resources */,
+				9488A79F219E6E7E006EC650 /* CollectionGameCell.xib in Resources */,
 				945A9C53219C0BC000A34026 /* RecommendCycleView.xib in Resources */,
 				9459A4AA219D7E5D00E32FF4 /* CollectionCycleCell.xib in Resources */,
 				945A9C31219BCF4D00A34026 /* CollectionPrettyCell.xib in Resources */,
 				94DAF8022199819200863359 /* Profile.storyboard in Resources */,
+				9488A79B219E643A006EC650 /* RecommendGameView.xib in Resources */,
 				94DAF7FC2199811200863359 /* Home.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -508,10 +522,12 @@
 				94DAF7E521996D5500863359 /* MainViewController.swift in Sources */,
 				944CB9F8219D208E004B54BD /* AnchorGroup.swift in Sources */,
 				94D64EEE219C28D4009E960C /* NetWorkToos.swift in Sources */,
+				9488A799219E63F4006EC650 /* RecommendGameView.swift in Sources */,
 				945C8F15219A6F3A001A12E7 /* Common.swift in Sources */,
 				9459A4A2219D53B800E32FF4 /* CollectionBaseCell.swift in Sources */,
 				945A9C30219BCF4D00A34026 /* CollectionPrettyCell.swift in Sources */,
 				944CB9F6219D193D004B54BD /* NSDateExtension.swift in Sources */,
+				9488A79E219E6E7E006EC650 /* CollectionGameCell.swift in Sources */,
 				945A9C2C219BBE8000A34026 /* CollectionNormalCell.swift in Sources */,
 				944CB9F4219D145E004B54BD /* RecommendViewModel.swift in Sources */,
 				944CB9FA219D3369004B54BD /* AnchorModel.swift in Sources */,
@@ -656,6 +672,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SPZ655U737;
 				INFOPLIST_FILE = DouYuZB/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -675,6 +692,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SPZ655U737;
 				INFOPLIST_FILE = DouYuZB/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

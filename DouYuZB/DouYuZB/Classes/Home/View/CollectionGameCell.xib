@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="CollectionGameCell" customModule="DouYuZB" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="80" height="90"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="80" height="90"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="王者荣耀" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pwf-JK-pTN">
+                        <rect key="frame" x="13.5" y="64" width="53.5" height="16"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="16" id="NiS-hG-WKW"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="hfL-Nn-XGd">
+                        <rect key="frame" x="18" y="15" width="44" height="44"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="hfL-Nn-XGd" secondAttribute="height" multiplier="1:1" id="2OX-73-Krr"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="22"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="hfL-Nn-XGd" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="15" id="Gyk-BT-lHg"/>
+                <constraint firstItem="pwf-JK-pTN" firstAttribute="top" secondItem="hfL-Nn-XGd" secondAttribute="bottom" constant="5" id="S9o-Yp-rO4"/>
+                <constraint firstAttribute="bottom" secondItem="pwf-JK-pTN" secondAttribute="bottom" constant="10" id="ihp-TR-NVa"/>
+                <constraint firstItem="hfL-Nn-XGd" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="kmX-r5-rhn"/>
+                <constraint firstItem="pwf-JK-pTN" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="lV1-Eu-bM2"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="158" height="150"/>
+            <connections>
+                <outlet property="contentImage" destination="hfL-Nn-XGd" id="qEW-dj-YAm"/>
+                <outlet property="titleLabel" destination="pwf-JK-pTN" id="rTp-3L-1NV"/>
+            </connections>
+            <point key="canvasLocation" x="126.40000000000001" y="91.754122938530742"/>
+        </collectionViewCell>
+    </objects>
+</document>

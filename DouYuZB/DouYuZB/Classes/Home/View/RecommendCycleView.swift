@@ -26,14 +26,14 @@ class RecommendCycleView: UIView {
             //设置PageControl个数
             pageControl.numberOfPages = cycleModels?.count ?? 0
             
-            //默认滚动到中间位置
-            let indexPath = IndexPath(item: (cycleModels?.count ?? 0), section: 0)
-            
-            collectionView.scrollToItem(at: indexPath, at: .left, animated: false)
-            
-            //加入定时器
-            removeCycleTimer()
-            addCycleTimer()
+//            //默认滚动到中间位置
+//            let indexPath = IndexPath(item: (cycleModels?.count ?? 0), section: 0)
+//
+//            collectionView.scrollToItem(at: indexPath, at: .left, animated: false)
+//
+//            //加入定时器
+//            removeCycleTimer()
+//            addCycleTimer()
         }
     }
 
@@ -49,7 +49,7 @@ class RecommendCycleView: UIView {
         super.awakeFromNib()
         
         //设置该控件不随着父控件的拉伸而拉伸
-        autoresizingMask = .init(rawValue: 0)
+        autoresizingMask = UIView.AutoresizingMask()
         
         //注册Cell
         collectionView.register(UINib(nibName: "CollectionCycleCell", bundle: nil), forCellWithReuseIdentifier: kCycleCellID)
@@ -106,15 +106,15 @@ extension RecommendCycleView : UICollectionViewDelegate{
         pageControl.currentPage = Int(offsetX / scrollView.bounds.width) % (cycleModels?.count ?? 1)
     }
     
-    //用户拖动的时候取消自动滚动
-    func scrollViewWillBeginDragging(_ scrollView: UIScrollView) {
-        removeCycleTimer()
-    }
-    
-    //结束拖动 加入自动滚动
-    func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
-        addCycleTimer()
-    }
+//    //用户拖动的时候取消自动滚动
+//    func scrollViewWillBeginDragging(_ scrollView: UIScrollView) {
+//        removeCycleTimer()
+//    }
+//
+//    //结束拖动 加入自动滚动
+//    func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
+//        addCycleTimer()
+//    }
 }
 
 
